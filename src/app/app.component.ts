@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'popover-bug';
+  height = '500px';
+  visible: boolean = false;
+
+  onClick = () => {
+    this.height = '100px';
+  }
 }
